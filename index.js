@@ -13,7 +13,7 @@ dbConnection();
 app.use(express.static("public"));
 
 //cors
-app.use(cors({ origin: true, credentials: true }));
+/* app.use(cors({ origin: true, credentials: true })); */
 
 //lectura y parse del body
 app.use(express.json());
