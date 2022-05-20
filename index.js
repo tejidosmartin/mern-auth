@@ -15,15 +15,6 @@ app.use(express.static("public"));
 //cors
 app.use(cors());
 
-app.use(function (req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
-  res.header(
-    "Access-Control-Allow-Headers",
-    "Origin, X-Requested-With, Content-Type, Accept"
-  );
-  next();
-});
-
 //lectura y parse del body
 app.use(express.json());
 
